@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chs.HtmlKanban.Web", "Chs.HtmlKanban.Web\Chs.HtmlKanban.Web.csproj", "{7CB66742-7513-4C71-AEBD-246E05ACB1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chs.HtmlKanban.Tests", "Chs.HtmlKanban.Tests\Chs.HtmlKanban.Tests.csproj", "{05ADEEAF-7FAF-4935-8927-083D628B340F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CB66742-7513-4C71-AEBD-246E05ACB1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB66742-7513-4C71-AEBD-246E05ACB1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB66742-7513-4C71-AEBD-246E05ACB1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB66742-7513-4C71-AEBD-246E05ACB1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05ADEEAF-7FAF-4935-8927-083D628B340F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05ADEEAF-7FAF-4935-8927-083D628B340F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05ADEEAF-7FAF-4935-8927-083D628B340F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05ADEEAF-7FAF-4935-8927-083D628B340F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
