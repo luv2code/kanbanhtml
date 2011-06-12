@@ -26,3 +26,4 @@ Package/Binaries/
 Package/Sources/
 packages
 *.exe
+*.docstates
