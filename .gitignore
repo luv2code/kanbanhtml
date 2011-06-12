@@ -2,6 +2,7 @@ Src/TestResults/**/*
 Build/**/*
 bin/
 obj/
+App_Data/
 last-test
 *.log
 *.dia~
