@@ -135,12 +135,14 @@
     <Compile Include="_App_Code\RavenController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="client\presenter.js" />
     <Content Include="client\services\messenger.js" />
     <Content Include="client\viewmodels\stickynoteboardViewModel.js" />
     <Content Include="client\views\stickynoteboardView.tmpl.htm" />
     <Content Include="client\views\stickynoteboardView.js" />
     <Content Include="client\views\stickynoteView.js" />
     <Content Include="client\views\stickynoteView.tmpl.htm" />
+    <Content Include="linking.htm" />
     <Content Include="Scripts\jquery-require.js" />
     <Content Include="client\lib\jquery.datalink.js" />
     <Content Include="client\lib\jquery.tmpl.js" />

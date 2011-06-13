@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.datalink.js" type="text/javascript"></script>
+</head>
+<body>
+  
+
+<script>
+    $(function () {
+        var person = {};
+        $('<form><div>First Name:<input type="text" name="firstName" /></div><div>Last Name:<input type="text" name="lastName" /></div></form>Object.firstName: <span id="objFirst"></span><br/>Object.lastName: <span id="objLast"></span>').link(person).appendTo('body');
+
+        // Chain link the person object to these elements to show the results
+        $("#objFirst").link(person, {
+            firstName: {
+                name: "objFirst",
+                convertBack: function (value, source, target) {
+                    $(target).text(value);
+                }
+            }
+        });
+        $("#objLast").link(person, {
+            lastName: {
+                name: "objLast",
+                convertBack: function (value, source, target) {
+                    $(target).text(value);
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

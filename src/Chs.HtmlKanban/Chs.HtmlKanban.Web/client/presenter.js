@@ -3,26 +3,27 @@
 /// <reference path="../Scripts/jquery.datalink.js" />
 /// <reference path="../Scripts/jquery.tmpl.js" />
 
-define(['jquery.tmpl', 'jquery.datalink'], function () {
+define(['lib/jquery.tmpl', 'lib/jquery.datalink'], function () {
     var presenter = function () { };
 
     presenter.prototype = {
-        createForm: function (pageName) {
-            var viewModel = require('viewmodels/' + pageName + 'ViewModel');
-            var view = require('views/' + pageName + 'View');
-            var templateText = require('text!views/' + pageName + 'View.tmpl.htm');
-            if (viewModel) {
-                var vm = new viewModel();
-                var templated = $(templateText)
-                    .tmpl(vm)
-                    .link(vm);
-                return new view(templated, vm);
-            }
-            else {
-                return new view(templateText);
-            }
+        createForm: function (pageName, callback) {
+            require([
+                'views/' + pageName + 'View',
+                'text!views/' + pageName + 'View.tmpl.htm',
+                'viewmodels/' + pageName + 'ViewModel'
+            ], function (view, templateText, viewModel) {
+                if (viewModel) {
+                    var vm = new viewModel();
+                    var templated = $.tmpl(templateText, vm).link(vm, vm.linkOptions);
+                    callback(new view(templated, vm));
+                }
+                else {
+                    callback(new view($(templateText)));
+                }
+            });
         }
     };
 
-    return presenter;
+    return new presenter();
 });
