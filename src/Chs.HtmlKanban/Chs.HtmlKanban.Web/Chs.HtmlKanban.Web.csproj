@@ -135,6 +135,11 @@
     <Compile Include="_App_Code\RavenController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="client\services\messenger.js" />
+    <Content Include="Scripts\jquery-require.js" />
+    <Content Include="client\lib\jquery.datalink.js" />
+    <Content Include="client\lib\jquery.tmpl.js" />
+    <Content Include="client\viewmodels\stickynote.js" />
     <Content Include="Global.asax" />
     <Content Include="client\i18n.js" />
     <Content Include="client\main.js" />
@@ -142,7 +147,6 @@
     <Content Include="Scripts\jquery-1.6.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.1.js" />
     <Content Include="Scripts\jquery-1.6.1.min.js" />
-    <Content Include="Scripts\jquery-require.js" />
     <Content Include="Scripts\jquery.datalink.js" />
     <Content Include="Scripts\jquery.tmpl.js" />
     <Content Include="Scripts\jquery.tmpl.min.js" />
@@ -189,8 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="client\services\" />
-    <Folder Include="client\viewmodels\" />
     <Folder Include="client\views\" />
   </ItemGroup>
   <ItemGroup>
