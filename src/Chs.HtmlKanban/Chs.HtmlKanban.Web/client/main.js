@@ -4,14 +4,16 @@
 /// <reference path="../Scripts/jquery.tmpl.js" />
 
 require(['services/messenger', 'lib/jquery.datalink', 'lib/jquery.tmpl'], function (messenger) {
-    messenger.subscribe('hello', function (data) {
+    var sayHello = function (data) {
         alert(data);
-    });
+    };
+    messenger.subscribe('hello', sayHello);
 
     $('<p>${name}</p>').tmpl({ name: 'Matt' }).appendTo('#main');
     $(function () {
         $(document).click(function () {
             messenger.publish('hello', 'hello world');
+            messenger.unsubscribe('hello', sayHello);
         });
     });
 });

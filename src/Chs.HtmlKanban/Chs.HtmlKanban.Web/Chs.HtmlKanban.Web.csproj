@@ -136,10 +136,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="client\services\messenger.js" />
+    <Content Include="client\viewmodels\stickynoteboardViewModel.js" />
+    <Content Include="client\views\stickynoteboardView.tmpl.htm" />
+    <Content Include="client\views\stickynoteboardView.js" />
+    <Content Include="client\views\stickynoteView.js" />
+    <Content Include="client\views\stickynoteView.tmpl.htm" />
     <Content Include="Scripts\jquery-require.js" />
     <Content Include="client\lib\jquery.datalink.js" />
     <Content Include="client\lib\jquery.tmpl.js" />
-    <Content Include="client\viewmodels\stickynote.js" />
+    <Content Include="client\viewmodels\stickynoteViewModel.js" />
     <Content Include="Global.asax" />
     <Content Include="client\i18n.js" />
     <Content Include="client\main.js" />
@@ -193,7 +198,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="client\views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
