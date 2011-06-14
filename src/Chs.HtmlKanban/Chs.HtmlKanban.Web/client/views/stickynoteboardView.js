@@ -3,9 +3,9 @@
 /// <reference path="../../Scripts/jquery.datalink.js" />
 
 define(['services/messenger', 'viewmodels/stickynoteboardViewModel', 'text!views/stickynoteboardView.tmpl.htm'], function (messenger) {
-    var stickynoteboard = function (templated, viewmodel) {
+    var stickynoteboard = function (view, viewmodel) {
         var $this = this;
-        this.view = templated;
+        this.view = view;
         this.viewModel = viewmodel;
         $(function () {
             $('button[name="clickHere"]', $this.view).click(function () {

@@ -8,7 +8,7 @@ define(['presenter', 'services/kanban'], function (presenter, kanbanService) {
             lastZIndex: {
                 name: "lastZIndex",
                 convertBack: function (value, source, target) {
-                    $(target).text(value);
+                	$(target).text(value); //TODO: factor out jquery and datalinking references
                 }
             }
         },
@@ -25,7 +25,7 @@ define(['presenter', 'services/kanban'], function (presenter, kanbanService) {
             
         },
         getNextZIndex: function () {
-            $(this).setField('lastZIndex', this.lastZIndex + 1);
+            $(this).setField('lastZIndex', this.lastZIndex + 1);//TODO: factor out jquery and datalinking references 
             return this.lastZIndex;
         }
     };

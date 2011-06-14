@@ -11,7 +11,7 @@ define(['lib/jquery.tmpl', 'lib/jquery.datalink'], function () {
             require([
                 'views/' + pageName + 'View',
                 'text!views/' + pageName + 'View.tmpl.htm',
-                'viewmodels/' + pageName + 'ViewModel'
+                'viewmodels/' + pageName + 'ViewModel' /* TODO: Test a page with a missing viewModel */
             ], function (view, templateText, viewModel) {
                 if (viewModel) {
                     var vm = new viewModel();
@@ -21,7 +21,7 @@ define(['lib/jquery.tmpl', 'lib/jquery.datalink'], function () {
                     callback(new view(templated, vm));
                 }
                 else {
-                    callback(new view($(templateText)));
+                    callback(new view($(templateText)));/* TODO: wrap in jquery necessary ? */
                 }
             });
         }
