@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kanban.css")" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="page">
@@ -11,8 +11,18 @@
             @RenderBody() @* using client side templating but razor still needs this to be called. *@
         </div>
     </div>
+    @{
+        
+#if DEBUG
+        <script type="text/javascript">
+
+            var require = {
+                urlArgs: "bust=" + (new Date()).getTime()
+            };
+        </script>
+#endif
+    }
     <script src="@Url.Content("~/Scripts/require.min.js")" type="text/javascript" data-main="client/main"></script>
     <script src="@Url.Content("~/Scripts/jquery-1.6.1.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/jquery-require.js")" type="text/javascript"></script>
 </body>
 </html>

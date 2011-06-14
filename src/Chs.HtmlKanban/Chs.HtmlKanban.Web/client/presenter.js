@@ -7,7 +7,7 @@ define(['lib/jquery.tmpl', 'lib/jquery.datalink'], function () {
     var presenter = function () { };
 
     presenter.prototype = {
-        createForm: function (pageName, callback) {
+        createForm: function (pageName, callback, model) {
             require([
                 'views/' + pageName + 'View',
                 'text!views/' + pageName + 'View.tmpl.htm',
@@ -15,7 +15,9 @@ define(['lib/jquery.tmpl', 'lib/jquery.datalink'], function () {
             ], function (view, templateText, viewModel) {
                 if (viewModel) {
                     var vm = new viewModel();
-                    var templated = $.tmpl(templateText, vm).link(vm, vm.linkOptions);
+                    $.extend(vm, model);
+                    var templated = $.tmpl(templateText, vm);
+                    $('.viewmodel', templated).link(vm, vm.linkOptions);
                     callback(new view(templated, vm));
                 }
                 else {

@@ -125,25 +125,32 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectMVC3.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BoardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StickyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\Sticky.cs" />
+    <Compile Include="Models\StickyBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_App_Code\RavenController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="client\lib\jquery.js" />
+    <Content Include="client\lib\jquery.ui.core.js" />
+    <Content Include="client\lib\jquery.ui.draggable.js" />
     <Content Include="client\presenter.js" />
+    <Content Include="client\services\kanban.js" />
     <Content Include="client\services\messenger.js" />
     <Content Include="client\viewmodels\stickynoteboardViewModel.js" />
     <Content Include="client\views\stickynoteboardView.tmpl.htm" />
     <Content Include="client\views\stickynoteboardView.js" />
     <Content Include="client\views\stickynoteView.js" />
     <Content Include="client\views\stickynoteView.tmpl.htm" />
-    <Content Include="linking.htm" />
-    <Content Include="Scripts\jquery-require.js" />
+    <Content Include="Content\kanban.css" />
     <Content Include="client\lib\jquery.datalink.js" />
     <Content Include="client\lib\jquery.tmpl.js" />
     <Content Include="client\viewmodels\stickynoteViewModel.js" />
@@ -154,6 +161,7 @@
     <Content Include="Scripts\jquery-1.6.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.1.js" />
     <Content Include="Scripts\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.13.custom.min.js" />
     <Content Include="Scripts\jquery.datalink.js" />
     <Content Include="Scripts\jquery.tmpl.js" />
     <Content Include="Scripts\jquery.tmpl.min.js" />

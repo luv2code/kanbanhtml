@@ -1,0 +1,33 @@
+﻿body 
+{
+    
+}
+
+.stickynote
+{
+    /*display:inline;*/
+    width:200px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    border:1px solid Black;
+    background-color:Black;
+    width:auto;
+    padding:0px;
+    cursor: move;
+}
+
+.stickynote div.header
+{
+    background-color:Black;
+    color:White;
+    font-weight:900;
+}
+
+.stickynote .text-box
+{
+    width:190px;
+    height:160px;
+    margin:0px;
+    cursor:auto;
+}
