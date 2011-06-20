@@ -7,7 +7,7 @@
 
 define(['knockout', 'lib/jquery.tmpl'], function () {
 	var presenter = function () { };
-
+	
 	presenter.prototype = {
 		createForm: function (pageName, callback, model) {
 			require([
