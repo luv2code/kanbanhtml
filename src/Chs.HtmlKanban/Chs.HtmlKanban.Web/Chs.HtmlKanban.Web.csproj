@@ -142,6 +142,7 @@
     <Content Include="client\lib\jquery.js" />
     <Content Include="client\lib\jquery.ui.core.js" />
     <Content Include="client\lib\jquery.ui.draggable.js" />
+    <Content Include="client\lib\knockout.js" />
     <Content Include="client\presenter.js" />
     <Content Include="client\services\kanban.js" />
     <Content Include="client\services\messenger.js" />
@@ -151,13 +152,15 @@
     <Content Include="client\views\stickynoteView.js" />
     <Content Include="client\views\stickynoteView.tmpl.htm" />
     <Content Include="Content\kanban.css" />
-    <Content Include="client\lib\jquery.datalink.js" />
     <Content Include="client\lib\jquery.tmpl.js" />
     <Content Include="client\viewmodels\stickynoteViewModel.js" />
     <Content Include="Global.asax" />
     <Content Include="client\i18n.js" />
     <Content Include="client\main.js" />
     <Content Include="README.jQuery.vsdoc.txt" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
     <Content Include="Scripts\jquery-1.6.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.1.js" />
     <Content Include="Scripts\jquery-1.6.1.min.js" />
@@ -170,6 +173,10 @@
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\knockout-1.2.1.debug.js" />
+    <Content Include="Scripts\knockout-1.2.1.js" />
+    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Scripts\modernizr-require.js" />
