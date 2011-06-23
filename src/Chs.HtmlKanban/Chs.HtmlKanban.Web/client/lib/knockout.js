@@ -1,1 +1,1 @@
-﻿define(['jquery', 'jquery.tmpl'], function () { return ko; });
+﻿define(['lib/jquery', 'lib/jquery.tmpl'], function () { return ko; });
