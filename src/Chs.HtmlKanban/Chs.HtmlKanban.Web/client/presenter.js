@@ -5,9 +5,9 @@
 /// <reference path="../Scripts/knockout.mapping-latest.debug.js" />
 
 
-define(['knockout', 'lib/jquery.tmpl'], function () {
+define(['lib/knockout', 'lib/jquery.tmpl'], function () {
 	var presenter = function () { };
-	
+
 	presenter.prototype = {
 		createForm: function (pageName, callback, model) {
 			require([
@@ -17,8 +17,12 @@ define(['knockout', 'lib/jquery.tmpl'], function () {
 			], function (view, templateText, viewModel) {
 				if (viewModel) {
 					var vm = ko.mapping.fromJS(new viewModel());
-					$.extend(vm,ko.mapping.fromJS(model));
+					if (model)
+						ko.mapping.updateFromJS(vm, model);
+					//					if(model)
+					//						$.extend(true, vm, ko.mapping.fromJS(model));
 					var templated = $.tmpl(templateText, vm);
+					ko.applyBindings(vm, templated.get(0));
 					//$('.viewmodel', templated).link(vm, vm.linkOptions);
 					callback(new view(templated, vm));
 				}
