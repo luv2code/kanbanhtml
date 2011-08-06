@@ -8,11 +8,11 @@ define('kanban-config', [], {
 require(['presenter'], function (presenter) {
 
 	require.ready(function () {
-		var boardSelection = presenter.createForm('boardSelection', function(boardSelection) {
-			boardSelection.view.appendTo('#main'):
-		} 
-//        var board = presenter.createForm('stickynoteboard', function (board) {
-//            board.view.appendTo('#main');
-//        });
+		var boardSelection = presenter.createForm('boardSelection', function (boardSelection) {
+			boardSelection.view.appendTo('#main');
+		});
+		//        var board = presenter.createForm('stickynoteboard', function (board) {
+		//            board.view.appendTo('#main');
+		//        });
 	});
 });
