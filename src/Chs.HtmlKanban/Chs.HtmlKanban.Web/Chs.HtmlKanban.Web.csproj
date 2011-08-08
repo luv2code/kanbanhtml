@@ -146,7 +146,9 @@
     <Content Include="client\presenter.js" />
     <Content Include="client\services\kanban.js" />
     <Content Include="client\services\messenger.js" />
+    <Content Include="client\viewmodels\boardSelectionViewModel.js" />
     <Content Include="client\viewmodels\stickynoteboardViewModel.js" />
+    <Content Include="client\views\boardSelectionView.js" />
     <Content Include="client\views\boardselectionView.tmpl.htm" />
     <Content Include="client\views\stickynoteboardView.tmpl.htm" />
     <Content Include="client\views\stickynoteboardView.js" />
