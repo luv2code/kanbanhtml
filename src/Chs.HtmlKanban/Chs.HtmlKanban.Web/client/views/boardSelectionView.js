@@ -1,3 +1,3 @@
 ﻿define(function () {
-	return null;
+    return function (view, viewModel) { };
 });
