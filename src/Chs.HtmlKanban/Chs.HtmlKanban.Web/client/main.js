@@ -3,13 +3,16 @@
 /// <reference path="../Scripts/jquery.datalink.js" />
 /// <reference path="../Scripts/jquery.tmpl.js" />
 define('kanban-config', [], {
-    baseUrl: ''
+	baseUrl: ''
 });
 require(['presenter'], function (presenter) {
-   
-    require.ready(function () {
-        var board = presenter.createForm('stickynoteboard', function (board) {
-            board.view.appendTo('#main');
-        });
-    });
+
+	require.ready(function () {
+		var boardSelection = presenter.createForm('boardSelection', function (boardSelection) {
+			boardSelection.view.appendTo('#main');
+		});
+//		var board = presenter.createForm('stickynoteboard', function (board) {
+//		    board.view.appendTo('#main');
+//		});
+	});
 });

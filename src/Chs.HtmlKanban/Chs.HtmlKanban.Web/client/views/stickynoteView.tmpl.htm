@@ -1,4 +1,9 @@
-﻿<div id="${Id}" class="stickynote" draggable="true" style="top:${Y}px;left:${X}px;height:${Height}px;width:${Width}px;z-index:${ZIndex};">
-    <div class="viewmodel header" id="Title" contenteditable="true">${Title}</div>
-    <textarea name="Text" class="viewmodel text-box">${Text}</textarea>
+﻿<div 
+	data-bind="style: { top:Y, left:X, height:Height, width:Width, zIndex:ZIndex }" 
+	id="${Id}" 
+	class="stickynote" 
+	draggable="true" 
+	style="top:${Y}px;left:${X}px;height:${Height}px;width:${Width}px;z-index:${ZIndex};">
+	<div class="header" data-bind="text: Title" contenteditable="true">${Title}</div>
+	<textarea data-bind="value: Text" class="text-box">${Text}</textarea>
 </div>

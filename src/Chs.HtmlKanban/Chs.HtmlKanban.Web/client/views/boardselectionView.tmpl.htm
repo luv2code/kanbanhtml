@@ -1,0 +1,10 @@
+﻿<div>
+    Select a board:
+    <ul>
+        {{each (index, value) boardList}}<li>${$value.Title}</li>
+        {{/each}}
+    </ul>
+    <input type="text" data-bind="val: newBoardName" />
+    <button>
+        go</button>
+</div>
