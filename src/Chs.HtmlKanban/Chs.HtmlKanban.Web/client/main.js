@@ -11,8 +11,8 @@ require(['presenter'], function (presenter) {
 		var boardSelection = presenter.createForm('boardSelection', function (boardSelection) {
 			boardSelection.view.appendTo('#main');
 		});
-		//        var board = presenter.createForm('stickynoteboard', function (board) {
-		//            board.view.appendTo('#main');
-		//        });
+//		var board = presenter.createForm('stickynoteboard', function (board) {
+//		    board.view.appendTo('#main');
+//		});
 	});
 });
