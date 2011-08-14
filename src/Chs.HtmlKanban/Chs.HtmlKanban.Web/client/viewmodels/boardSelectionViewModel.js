@@ -5,13 +5,18 @@
         });
     };
     viewModel.prototype = {
-        boardList : [],
+        boards: [],
         createBoard: function () {
+            if (this.newBoardName.length < 1) {
+                alert("Board Name must not be empty.");
+            } else {
+                
+            }
         },
         refreshList: function () {
         },
         newBoardName: ''
-    }; 
+    };
 
     return viewModel;
 });

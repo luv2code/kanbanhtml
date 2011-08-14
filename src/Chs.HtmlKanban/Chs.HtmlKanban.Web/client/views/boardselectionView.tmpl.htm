@@ -1,10 +1,9 @@
 ﻿<div>
     Select a board:
     <ul>
-        {{each (index, value) boardList}}<li>${$value.Title}</li>
-        {{/each}}
+        {{each boards}}<li>${Title}</li>{{/each}}
     </ul>
-    <input type="text" data-bind="val: newBoardName" />
-    <button>
-        go</button>
+    <input type="text" data-bind="value:newBoardName" />
+    <button data-bind="click: createBoard">
+        Create Board</button>
 </div>
